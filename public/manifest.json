@@ -1,0 +1,21 @@
+{
+  "name": "Local Storage Inspector",
+  "version": "1.0",
+  "description": "Devtools extension to inspect local storage",
+  "icons": {
+    "128": "icon.png"
+  },
+  "manifest_version": 3,
+  "devtools_page": "devtools/devtools.html",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  }
+}

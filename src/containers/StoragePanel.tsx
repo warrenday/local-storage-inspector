@@ -25,7 +25,11 @@ const StoragePanel = (props: IStoragePanelProps) => {
       h="full"
       bg="base.800"
     >
-      <Box borderBottom="1px solid" borderColor="border-color-light">
+      <Box
+        borderBottom="1px solid"
+        borderColor="border-color-light"
+        height="27px"
+      >
         <IconButton
           aria-label="close storage panel"
           icon={<XMarkIcon width="17px" />}

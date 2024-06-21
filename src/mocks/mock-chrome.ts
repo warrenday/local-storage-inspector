@@ -5,10 +5,37 @@ import type { IPort } from "../providers/PageLocalStorageProvider";
 const emitter = new EventEmitter();
 
 let mockStorage: Record<string, string> = {
-  key1: "value1",
-  key2: "value2",
-  key3: "value3",
-  key4: `{"hello":"value1","hello":"value2"}`,
+  username: "Warren91",
+  address: JSON.stringify({
+    street: "123 Baker Street",
+    city: "London",
+    postcode: "NW1 6XE",
+  }),
+  isLoggedIn: "true",
+  token:
+    'Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"',
+  settings: JSON.stringify({
+    theme: "dark",
+    fontSize: "14px",
+    fontFamily: "Inter, sans-serif",
+  }),
+  analytics: JSON.stringify({
+    trackingId: "UA-123456789-1",
+    enabled: "true",
+    region: "us-west-1",
+    userGroup: {
+      type: "admin",
+      permissions: ["read", "write", "delete"],
+    },
+  }),
+  userPreferences: JSON.stringify({
+    notifications: {
+      email: "true",
+      push: "true",
+    },
+  }),
+  lastLogin: new Date().toISOString(),
+  visits: "123",
 };
 
 const mockedChrome: DeepPartial<typeof chrome> = {

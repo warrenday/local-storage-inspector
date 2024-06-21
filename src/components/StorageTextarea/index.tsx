@@ -176,6 +176,7 @@ const StorageTextareaInner = (props: IStrorageTextareaProps & BoxProps) => {
         top={2}
         zIndex={1}
         isAttached
+        bg="base.800"
       >
         <ModeButton onClick={() => setMode("text")} isActive={mode === "text"}>
           Text

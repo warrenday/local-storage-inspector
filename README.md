@@ -4,6 +4,10 @@ A browser extension that allows you to inspect and manage localStorage.
 
 The extension is available for both Chrome and Firefox.
 
+1. [Chrome Webstore](https://chromewebstore.google.com/detail/local-storage-inspector/pbfecmmdbppphcnmlmegkcdobpadegid?authuser=0&hl=en-GB)
+
+2. Firefox coming very soon!
+
 ## Features
 
 - View all items in localStorage

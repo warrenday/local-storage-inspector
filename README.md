@@ -1,6 +1,15 @@
-# Local Storage Inspector
+<div align="center">
+  <h1>Local Storage Inspector</h1>
+  <h3>A browser extension that allows you to inspect and manage localStorage.</h3>
+  <img alt="MIT License" src="https://img.shields.io/github/license/warrenday/local-storage-inspector" />
+  <a href="https://github.com/sponsors/warrenday">
+    <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/warrenday">
+  </a>
+  <br />
+  <br />
+</div>
 
-A browser extension that allows you to inspect and manage localStorage.
+![Application Preview](docs/main.png)
 
 The extension is available for both Chrome and Firefox.
 

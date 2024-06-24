@@ -1,5 +1,5 @@
 import fs from "fs";
-import packageJson from "../package.json";
+import packageJson from "../package.json" assert { type: "json" };
 
 const manifestPath = "./dist/manifest.json";
 

@@ -1,5 +1,3 @@
-console.log("content script loaded yo!");
-
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   // Request to get local storage
   if (message.action === "get-local-storage") {

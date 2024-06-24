@@ -56,10 +56,8 @@ const usePort = (connectInfo?: chrome.runtime.ConnectInfo): IPort | null => {
 
   useEffect(() => {
     const newPort = chrome.runtime.connect({ name });
-
-    newPort.onMessage;
-
     setPort(newPort as unknown as IPort);
+
     return () => {
       newPort.disconnect();
     };
